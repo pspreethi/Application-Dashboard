@@ -51,7 +51,7 @@ Here’s what I know how to do and where I’m strongest:
 - Design quick, useful MVPs (dashboards, analyses, mini-tools)  
 - Research user, product, and market behavior to uncover insights  
 - Communicate clearly with non-technical stakeholders  
-- Collaborate well. I thrive around smart, intense people  
+- Collaborate well. I enjoy working with people who are sharp, focused, and thoughtful about how they solve problems. 
 
 I’ve done all of this in different contexts, but what I want now is to do it **alongside people who are building something I care about**.
 """)
