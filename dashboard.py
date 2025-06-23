@@ -92,19 +92,28 @@ Thanks for taking the time to read this. Even if it doesn't lead to something ri
 """)
 
 
+# --- NAVIGATION FUNCTIONS ---
+def go_back():
+    if st.session_state.page > 0:
+        st.session_state.page -= 1
+
+def go_next():
+    if st.session_state.page < len(pages) - 1:
+        st.session_state.page += 1
+
 # --- NAVIGATION BUTTONS ---
 st.markdown("---")
+
+# Create columns for button layout
 col1, col2, col3 = st.columns([1, 2, 1])
 
 with col1:
-    if st.button("« Back", key="back") and st.session_state.page > 0:
-        st.session_state.page -= 1
-        st.experimental_rerun()
+    if st.session_state.page > 0:
+        st.button("« Back", on_click=go_back, key="back_btn")
 
 with col3:
-    if st.button("Next »", key="next") and st.session_state.page < len(pages) - 1:
-        st.session_state.page += 1
-        st.experimental_rerun()
+    if st.session_state.page < len(pages) - 1:
+        st.button("Next »", on_click=go_next, key="next_btn")
 
 # Optional: Add page indicator
 with col2:
