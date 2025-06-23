@@ -1,7 +1,10 @@
 import streamlit as st
 
-# Page setup
-st.set_page_config(page_title="Cartesia Application — Sai Preethi Poka", layout="centered")
+st.set_page_config(
+    page_title="Application — Sai Preethi Poka",
+    layout="centered",
+    initial_sidebar_state="expanded"
+)
 
 # Sidebar Navigation
 st.sidebar.title("📄 Jump to Section")
