@@ -27,7 +27,7 @@ st.title(pages[st.session_state.page])
 # --- PAGE CONTENT ---
 if st.session_state.page == 0:
     st.write("""
-Thanks for clicking this. I didn’t want to send a resume or templated email. I wanted to build something that shows how I think and why I’m reaching out.
+Thanks for clicking this. I wanted to build something that shows how I think and why I’m reaching out. So here I am.
 
 I’m Preethi. I just finished my Master’s in Information Systems, and I learn best by building and solving open-ended problems.
 
